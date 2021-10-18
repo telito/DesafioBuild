@@ -7,8 +7,6 @@ function Header() {
     <div className="container d-flex align-items-center justify-content-between">
 
       <div className="logo">
-        
-        
          <Image src="static/logo/frame 1.svg" alt="" className="img-fluid" />
       </div>
 
