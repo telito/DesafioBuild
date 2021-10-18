@@ -343,12 +343,25 @@ a {
  .nasa{
    display:none;
  }
-  
+
+ .hero{
+   padding-bottom:100px;
+ }
+
+ .hero .card-body{
+   height: 200px;
+ }
 }
 
 @media(max-width: 768px){
 
+  
+
   /* hero mobile part */
+  .hero .card-body{
+    height: auto;
+  }
+
   .hero .card{
     margin: auto !important;
     margin-top:10px !important;
