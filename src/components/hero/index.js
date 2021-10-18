@@ -6,7 +6,7 @@ import Box from '../box';
 
 function GroupBox(){
     const text = [
-        ["Receba em tempo real todas as necessidades da sua tripulação e engenheiros!" , "Tempor Real" ], ["Todas as mensagens e Feedback's ficam salvos no nosso banco de dados." , "Salvo para sempre"], ["Todos os tripulantes recebem alertas em tempo real de quando suas ideias são atendidas!" , "Feedback automatico" ]
+        ["Receba em tempo real todas as necessidades da sua tripulação e engenheiros!" , "Tempor Real", 1 ], ["Todas as mensagens e Feedback's ficam salvos no nosso banco de dados." , "Salvo para sempre" , 2], ["Todos os tripulantes recebem alertas em tempo real de quando suas ideias são atendidas!" , "Feedback automatico", 3 ]
     ]
     
     const groupText = text.map((item) => 
@@ -14,7 +14,7 @@ function GroupBox(){
         <Box
             text = {item[0]}
             title = {item[1]}
-           
+            key = {item[2]}
         />
         </Col>
     )
