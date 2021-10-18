@@ -10,13 +10,13 @@ function GroupBox(){
     ]
     
     const groupText = text.map((item) => 
-        <Col className="col-12 col-md-4">
+       
         <Box
             text = {item[0]}
             title = {item[1]}
             key = {item[2]}
         />
-        </Col>
+       
     )
     
     return groupText;
