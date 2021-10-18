@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #0B0045;
+  font-family: -apple-system, 'Mina', sans-serif;
+    --cor-roxa: #0B0045;
+    --cor-azul: #0075E3;
+    --cor-amarela: #FFE203;
+
+ 
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* header part */
+#header {
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 16px 0;
+  background: var(--cor-roxa);
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 70px;
+}
+
+/* header navbar part */
+.navbar {
+  padding: 0;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar li {
+  position: relative;
+}
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-size: 14px;
+  color: #adc7de;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+.navbar a i, .navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #fff;
+}
+.navbar .getstarted, .navbar .getstarted:focus {
+  background: var(--cor-roxa);
+  color: #fff;
+  padding: 4px 25px 6px 25px;
+  margin-left: 30px;
+  border-radius: 50px;
+  border: 2px solid var(--cor-amarela);
+}
+.navbar .getstarted:hover, .navbar .getstarted:focus:hover {
+  background: var(--cor-amarela);
+  color: var(--cor-roxa);
+}
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+}
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  font-weight: 500;
+  color: #3e6f9b;
+}
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+  color: var(--cor-amarela);
+}
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+/* Hero Part */
+.hero{
+  background-color: var(--cor-roxa);
+  padding-top:20px
+  
+}
+
+.hero .card{
+  margin: auto;
+  max-width: 300px;
+  margin-bottom: -80px !important;
+}
+
+
+.hero__cita{
+  color: var(--cor-amarela);
+  font-style: italic;
+  text-align: center;
+  font-size: 1.2em;
+
+}
+
+.hero__text{
+  text-align: center;
+  color: white;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+/* box part */
+.box{
+  box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.397);
+  border: none;
+  background-color: var(--cor-azul) !important;
+  color:white;
+  text-align: center;
+}
+
+/* nasa part */
+ .nasa div{
+   max-height: 700px !important;
+   min-height: 600px;
+   overflow: hidden;
+  
+ }
+
+
+/* slide part */
+.slide__item{
+  max-height: 700px;
+}
+.slide__item__image{
+  margin-top:-8%
+}
+
+.slide__content{
+  min-height:400px;
+  text-align: center;
+}
+
+/* Spotfy part */
+
+.spotify{
+ margin-bottom: -10px !important;
+}
+
+
+
+/* Contact Part */
+.contact{
+  background-color : var(--cor-amarela);
+  color: white;
+}
+
+.contact .info-box {
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px 0 30px 0;
+  background: #fff;
+}
+.contact .info-box i {
+  font-size: 32px;
+  color: var(--cor-amarela);
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #fff7e5;
+}
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #777777;
+  font-weight: 700;
+  margin: 10px 0;
+}
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.contact .php-email-form {
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 30px;
+  background: #fff;
+}
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+.contact .php-email-form input, .contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+.contact .php-email-form input::focus, .contact .php-email-form textarea::focus {
+  background-color: var(--cor-amarela);
+}
+.contact .php-email-form input {
+  padding: 10px 15px;
+}
+.contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+.contact .php-email-form button[type=submit] {
+  background: var(--cor-amarela);
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}
+.contact .php-email-form button[type=submit]:hover {
+  background: #fdd067;
+}
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* footer part */
+.footer{
+ background-color: var(--cor-roxa);
+ color:white;
+}
+
+
+
+
+/* responsive part */
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+
+
+
+@media (max-width: 991px) {
+ 
+ #header{
+   display: none;
+ }
+ .nasa{
+   display:none;
+ }
+  
+}
+
+@media(max-width: 768px){
+
+  /* hero mobile part */
+  .hero .card{
+    margin: auto !important;
+    margin-top:10px !important;
+  }
+
+  /* nasa mobile part */
+  .nasa{
+    margin-top: 20px!important;
+   }
+
+  /* header mobile part */
+
+  .header {
+    -moz-text-align-last: center;
+    text-align-last: center;
+  }
+  .header h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .header h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  .header .hero-img img {
+    width: 70%;
+  }
+  
+}
+
+@media (max-width: 575px) {
+  .header .hero-img img {
+    width: 80%;
+  }
+}
+
