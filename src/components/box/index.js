@@ -3,7 +3,7 @@ import {Col} from 'react-bootstrap'
 
 function Box(props) {
     return (
-        <Col className="col-12 " key={props.key}>
+        <Col className="col-12 col-md-4" key={props.key}>
             <div className="card  mb-3 box">
                 <div className="card-body">
                     <h5 className="card-title">{props.title}</h5>
