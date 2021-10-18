@@ -9,7 +9,7 @@ function Header() {
       <div className="logo">
         
         
-         <a href="index.html"><Image src="static/logo/frame 1.svg" alt="" className="img-fluid" /></a>
+         <Image src="static/logo/frame 1.svg" alt="" className="img-fluid" />
       </div>
 
       <nav id="navbar" className="navbar">

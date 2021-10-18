@@ -57,9 +57,9 @@ function Contact(){
                 <textarea className="form-control" name="message" rows="5" placeholder="Mensagem" required></textarea>
               </div>
               <div className="my-3">
-                <div className="loading">Loading</div>
+                <div className="loading">Aguarde</div>
                 <div className="error-message"></div>
-                <div className="sent-message">Your message has been sent. Thank you!</div>
+                <div className="sent-message">Sua mensagem foi enviada!</div>
               </div>
               <div className="text-center"><button type="submit">Enviar Email</button></div>
             </form>

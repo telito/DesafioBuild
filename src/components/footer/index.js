@@ -12,7 +12,7 @@ const Footer = () => <footer className="page-footer font-small blue pt-4 footer"
     </div>
 
     <div className="footer-copyright text-center py-3">© 2021 Copyright:
-        <a href="https://www.linkedin.com/in/adrieltelito/"> Adrie Telito</a>
+        <a href="https://www.linkedin.com/in/adrieltelito/"> Adriel Telito</a>
     </div>
 
 </footer>
